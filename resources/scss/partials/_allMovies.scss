@@ -1,0 +1,19 @@
+
+.container{
+    justify-content: space-between;
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30% !important;
+        margin-bottom: 50px;
+        text-align: center;
+
+        img{
+            height: 70%;
+            object-fit: contain;
+        }
+    }
+}
+
