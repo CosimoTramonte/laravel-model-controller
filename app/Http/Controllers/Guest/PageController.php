@@ -23,10 +23,10 @@ class PageController extends Controller
         return view('about');
     }
 
-    public function movieDetail(){
+    public function movieDetail($id){
+        $movie = Movie::where('id', $id)->first();
 
-
-        return view('movieDetail');
+        return view('movieDetail', compact('movie'));
     }
 
 }

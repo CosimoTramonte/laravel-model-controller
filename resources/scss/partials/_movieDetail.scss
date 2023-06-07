@@ -1,6 +1,7 @@
 
-.ct-container{
-    justify-content: space-between;
+.container{
+    display: flex;
+    justify-content: center;
 
     .card{
         display: flex;

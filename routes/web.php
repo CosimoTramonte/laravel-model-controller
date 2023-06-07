@@ -20,4 +20,4 @@ Route::get('/elenco-film', [PageController::class, 'movies'])->name('movies');
 
 Route::get('/info', [PageController::class, 'about'])->name('about');
 
-Route::get('/dettagli-film', [PageController::class, 'movieDetail'])->name('movieDetail');
+Route::get('/dettagli-film/{id}', [PageController::class, 'movieDetail'])->name('movieDetail');

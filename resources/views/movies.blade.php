@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container d-flex flex-wrap py-5">
+    <div class="ct-container d-flex flex-wrap py-5 px-5">
 
         @foreach ($movies as $movie)
 
@@ -15,9 +15,7 @@
                     <h2 class="card-title">{{$movie->title}}</h2>
                     <h6>{{$movie->original_title}}</h6>
 
-                    <p>Vote : {{$movie->vote}}</p>
-
-                    <a href="{{route('movieDetail')}}" class="btn btn-primary">Dettagli</a>
+                    <a href="{{route('movieDetail', ['id' =>$movie->id])}}" class="btn btn-primary">Dettagli</a>
                 </div>
             </div>
 
