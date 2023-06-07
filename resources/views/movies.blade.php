@@ -15,7 +15,7 @@
                     <h2 class="card-title">{{$movie->title}}</h2>
                     <h6>{{$movie->original_title}}</h6>
 
-                    <a href="{{route('movieDetail', ['id' =>$movie->id])}}" class="btn btn-primary">Dettagli</a>
+                    <a href="{{route('movieDetail', ['id' => $movie->id])}}" class="btn btn-primary">Dettagli</a>
                 </div>
             </div>
 
